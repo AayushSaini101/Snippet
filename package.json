@@ -1,0 +1,29 @@
+{
+    "name": "snippetgenerator",
+    "displayName": "SnippetGenerator",
+    "description": "Checking",
+    "publisher": "checking",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AayushSaini101/Snippet.git"
+    },
+    "icon": "logo.jpg",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "java",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    },
+    "dependencies": {
+        "mongodb": "^3.6.3"
+    }
+}
