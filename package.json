@@ -20,6 +20,10 @@
             {
                 "language": "java",
                 "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "cpp",
+                "path": "./snippets/cppsnippets.code-snippets"
             }
         ]
     },
