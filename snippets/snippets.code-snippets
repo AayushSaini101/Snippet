@@ -92,5 +92,71 @@
   ],
   "description": "Method to find maximum number of prime factors within a given range."
 }
-
+,
+"BubbleSort": {
+	"prefix": "_BubbleSort",
+	"body": [
+	  "void BubbleSort(int a[]){",
+	  "int temp=0;",
+	  "boolean swap=false;",
+	  "for(int i=0;i<a.length;++i){",
+	  "swap=false;",
+	  "for(int j=0;j<=a.length-1-i;++j){",
+	  "if(a[j]>a[j+1]){",
+	  " //swap the numbers",
+	  "temp=a[j];",
+	  "a[j]=a[j+1]",
+	  "a[j+1]=temp;",
+	  "swap=true;",
+	  "}",
+	  "}",
+	  "if(swap==false){",
+	  "return ;",
+	  "}",
+	  "}",
+	  "}"
+	],
+	"description": "StableBubbleSortAlgorithm"
+  }
+  ,
+  "InsertionSort": {
+	"prefix": "_InsertionSort",
+	"body": [
+	  "",
+	  "void Insertionsort(int a[]){",
+	  "for(int i=0;i<a.length;++i){",
+	  "int key=a[i];",
+	  "int  j=i-1;",
+	  "while(j>=0&&a[key]>key){",
+	  "a[j+1]=a[j];",
+	  "--j; ",
+	  "}",
+	  "a[j+1]=key;   ",
+	  "}",
+	  "}"
+	],
+	"description": "StableInsertionsort"
+  }
+  ,
+  "SelectionSort": {
+	"prefix": "_SelectionSort",
+	"body": [
+	  "void SelectionSort(int a[]){ ",
+	  "//Selection sort",
+	  "for(int i=0;i<a.length;++i){",
+	  "int minindex=i;",
+	  "for(int j=i+1;i<a.length;++j){",
+	  "if(a[j]<a[minindex]){",
+	  "minindex=j;",
+	  "}",
+	  "}",
+	  "//swap the position",
+	  "int temp=a[i];",
+	  "a[i]=a[minindex];",
+	  "a[minindex]=temp;",
+	  "}",
+	  "}"
+	],
+	"description": "UnstableSelectionSort"
+  }
 }
