@@ -19,11 +19,11 @@
         "snippets": [
             {
                 "language": "java",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/java.json"
             },
             {
                 "language": "cpp",
-                "path": "./snippets/cppsnippets.code-snippets"
+                "path": "./snippets/cpp.json"
             }
         ]
     },
