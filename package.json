@@ -23,10 +23,6 @@
             {
                 "language": "java",
                 "path": "./snippets/java.json"
-            },
-            {
-                "language": "cpp",
-                "path": "./snippets/cpp.json"
             }
             ,
             {
