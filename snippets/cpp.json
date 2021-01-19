@@ -1,18 +1,54 @@
 {
-    "StringSubstring": {
-        "prefix": "_Substring2",
+
+    
+    "Bubble Sort": {
+        "prefix": "_BubbleSort",
         "body": [
-          "static void Stringsubstring(String m,String ans,int index){",
-          " if(index==m.length()){",
-          " System.out.println(ans);",
-          " return;",
-          " ",
-          " }",
-          " Stringsubstring(m,ans+m.charAt(index),++index);",
-          " --index;",
-          " Stringsubstring(m,ans,++index);",
+          "void BubbleSort(int arr[], int n)",
+          "{",
+          "    int counter = 1;",
+          "    bool swap;",
+          "    while(counter < n)",
+          "    {",
+          "        swap = false;",
+          "        for(int i=0; i < n-counter; i++)",
+          "        {",
+          "            if(arr[i]>arr[i+1])",
+          "            {",
+          "                int temp = arr[i];",
+          "                arr[i] = arr[i+1];",
+          "                arr[i+1] = temp;",
+          "                swap = true;",
+          "            }",
+          "        }",
+          "        if (swap == false) ",
+          "            break;",
+          "        counter++;",
+          "    }",
           "}"
         ],
-        "description": "RecursiveCodeofSubstring"
+        "description": "Bubble Sort"
+      },
+
+      "Insertion Sort": {
+        "prefix": "_InsertionSort",
+        "body": [
+          "void InsertionSort(int arr[], int n)",
+          "{",
+          "    for(int i=0; i<n; i++)",
+          "    {",
+          "        int current = arr[i];",
+          "        int j=i-1;",
+          "        while (arr[j]>current && j>=0)",
+          "        {",
+          "            arr[j+1] = arr[j];",
+          "            j--;",
+          "        }",
+          "        arr[j+1] = current;",
+          "    }",
+          "}"
+        ],
+        "description": "Insertion Sort"
       }
+      
 }
