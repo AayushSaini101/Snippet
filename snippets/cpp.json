@@ -2,7 +2,7 @@
 
     
     "Bubble Sort": {
-        "prefix": "!BubbleSort",
+        "prefix": "_BubbleSort",
         "body": [
           "void BubbleSort(int arr[], int n)",
           "{",
@@ -31,7 +31,7 @@
       },
 
       "Insertion Sort": {
-        "prefix": "!InsertionSort",
+        "prefix": "_InsertionSort",
         "body": [
           "void InsertionSort(int arr[], int n)",
           "{",
