@@ -16,6 +16,8 @@
 	"FastScanner": {
 		"prefix": "Fast",
 		"body": [
+		  "import java.util.*;",
+		  "import java.io.*;",
 		  "class FastScanner{",
 		  "BufferedReader br=new BufferedReader(new InputStreamReader(System.in));",
 		  "StringTokenizer st=new StringTokenizer(\"\");",
@@ -158,5 +160,70 @@
 	  "}"
 	],
 	"description": "UnstableSelectionSort"
+  }
+  ,
+  "MergeSort": {
+	"prefix": "_MergeSort",
+	"body": [
+	  "static void mergesort(int numbers[],int start,int mid,int end){",
+	  " //Out place sorting algorithm",
+	  " int First[]=new int[mid-start+1];",
+	  " int second[]=new int[end-mid];",
+	  " //Fill the elements",
+	  " int index1=0;",
+	  " int index2=0;",
+	  " int index3=start;",
+	  " ",
+	  " for(int i=start;i<=mid;++i){",
+	  " First[index1++]=numbers[i];",
+	  " }",
+	  " for(int j=mid+1;j<=end;++j){",
+	  " second[index2++]=numbers[j];",
+	  " }",
+	  " int i=0;",
+	  " int j=0;",
+	  " while(i<First.length&&j<second.length){",
+	  " if(First[i]>second[j]){",
+	  " numbers[start++]=second[j];",
+	  " ++j;",
+	  " }",
+	  " else{",
+	  " numbers[start++]=First[i];",
+	  " ++i;",
+	  " }",
+	  " }",
+	  " while(i<First.length){",
+	  " numbers[start++]=First[i++];",
+	  " }",
+	  " while(j<second.length){",
+	  " numbers[start++]=second[j++];",
+	  " }",
+	  "",
+	  "",
+	  " }",
+	  "static void print(int a[]){",
+	  " for(int i=0;i<a.length;++i){",
+	  " System.out.print(a[i]+\" \");",
+	  " }",
+	  "}"
+	],
+	"description": "StableMergeSort"
+  }
+  ,
+  "StringSubstring": {
+	"prefix": "_Substring",
+	"body": [
+	  "static void Stringsubstring(String m,String ans,int index){",
+	  " if(index==m.length()){",
+	  " System.out.println(ans);",
+	  " return;",
+	  " ",
+	  " }",
+	  " Stringsubstring(m,ans+m.charAt(index),++index);",
+	  " --index;",
+	  " Stringsubstring(m,ans,++index);",
+	  "}"
+	],
+	"description": "RecursiveCodeofSubstring"
   }
 }

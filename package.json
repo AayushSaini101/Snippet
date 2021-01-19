@@ -16,12 +16,33 @@
         "Snippets"
     ],
     "contributes": {
-        "snippets": [
+        
+        
+        "snippets":[
+            
             {
                 "language": "java",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/java.json"
             }
+            ,
+            {
+                "language": "cpp",
+                "path": "./snippets/cpp.json"
+            }
+            ,
+            {
+                "language": "python",
+                "path": "./snippets/py.json"
+            }
+            
+
+
+            
+            
         ]
+        
+        
+        
     },
     "dependencies": {
         "mongodb": "^3.6.3"
