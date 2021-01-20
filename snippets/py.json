@@ -1,20 +1,3 @@
 
   
-    {
-        "StringSubstring": {
-            "prefix": "_Substring3",
-            "body": [
-              "static void Stringsubstring(String m,String ans,int index){",
-              " if(index==m.length()){",
-              " System.out.println(ans);",
-              " return;",
-              " ",
-              " }",
-              " Stringsubstring(m,ans+m.charAt(index),++index);",
-              " --index;",
-              " Stringsubstring(m,ans,++index);",
-              "}"
-            ],
-            "description": "RecursiveCodeofSubstring"
-          }
-    }
+   

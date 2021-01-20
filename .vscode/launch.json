@@ -6,6 +6,13 @@
 	"version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Snippet_d5460c78"
+        },
+        {
             "name": "Extension",
             "type": "extensionHost",
             "request": "launch",
