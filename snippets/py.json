@@ -14,7 +14,7 @@
       
         "# Function to initialize head", 
         "def __init__(self):",
-            s"elf.head = None",
+            "self.head = None",
       
       
         "# Functio to insert a new node at the beginning", 
