@@ -30,9 +30,9 @@
     ""
   ],
   "description": "Insert_ll"
-}
-
 },
+
+
 "deletion in Linked list": {
     "prefix": "_deletell",
     "body": [
@@ -106,7 +106,7 @@
       ""
     ],
     "description": "Length of Linked list"
-  }
+  },
   "Is Loop": {
     "prefix": "_isLoop",
     "body": [
